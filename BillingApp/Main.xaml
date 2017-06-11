@@ -1,0 +1,238 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" mc:Ignorable="d" x:Name="strt" x:Class="MainWindow"
+    Title="Billing App" Height="740" Width="1366" WindowStartupLocation="CenterScreen" WindowState="Maximized" Icon="/BillingApp;component/bill.ico" Foreground="{x:Null}">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/bg3.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
+    <Grid x:Name="beg" Height="709" Width="1358">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*" />
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="201*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="679*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="rect1" HorizontalAlignment="Left" Height="73" VerticalAlignment="Top" Width="1358" Grid.ColumnSpan="5" Margin="0,-2,0,0" d:IsLocked="True">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0,1" MappingMode="RelativeToBoundingBox" StartPoint="1,0">
+                    <GradientStop Color="#CCFFFFFF" Offset="0.496"/>
+                    <GradientStop/>
+                    <GradientStop Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <ProgressBar Height="3" IsIndeterminate="True" Margin="3,71,-3,0" x:Name="ProgressBar1" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" Value="100" VerticalAlignment="Top" Grid.ColumnSpan="5" Background="#00000000" BorderBrush="#00000000" Grid.RowSpan="2">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="Transparent" />
+                    <GradientStop Color="#FF5CA1DE" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <Image Height="57" HorizontalAlignment="Left" Margin="131,5,0,0" x:Name="logo1" OpacityMask="Black" Source="/BillingApp;component/bill.ico" Stretch="Uniform" VerticalAlignment="Top" Width="60" Grid.Column="2" Opacity="0.9" d:IsLocked="True" />
+        <Label Content="Billing App" FontFamily="Gabriola" FontSize="45" FontWeight="Normal" HorizontalAlignment="Left" Margin="192,-1,0,0" x:Name="title" Width="184" Grid.ColumnSpan="3" Grid.Column="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4FAAD5" Offset="1" />
+                    <GradientStop Color="#FF0074FF" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="©2014 Eos Incorporation" Grid.Column="4" HorizontalAlignment="Left" Height="38" Margin="382,550,0,0" VerticalAlignment="Top" Width="297" FontSize="18" FontFamily="Palatino Linotype" Grid.Row="1" HorizontalContentAlignment="Right">
+            <Label.Background>
+                <LinearGradientBrush SpreadMethod="Reflect">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Margin="26,24,0,0" Grid.Row="1" TextWrapping="Wrap" Width="144" Text="Bill number" FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" Height="34" VerticalAlignment="Top" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644"/>
+                    <GradientStop Color="#FF575050"/>
+                    <GradientStop Color="#FE554E4E" Offset="1"/>
+                    <GradientStop Color="#FF191717" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="26,63,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Text="Name" FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644"/>
+                    <GradientStop Color="#FF575050"/>
+                    <GradientStop Color="#FE554E4E" Offset="1"/>
+                    <GradientStop Color="#FF191717" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBox x:Name="no" HorizontalAlignment="Left" Height="34" Margin="43,24,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" FontFamily="Palatino Linotype" FontSize="20" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="#BFFFFFFF" Background="#B2FFFFFF"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="34" Margin="43,63,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontFamily="Palatino Linotype" FontSize="20" Grid.Column="1" Grid.ColumnSpan="2" TabIndex="1" BorderBrush="#BFFFFFFF" Background="#B2FFFFFF"/>
+        <Button x:Name="inst_name" Content="Select the Institution" HorizontalAlignment="Left" Height="34" Margin="43,102,0,0" Grid.Row="1" VerticalAlignment="Top" Width="394" Background="#FFFFDCDC" FontSize="18" FontStyle="Italic" Grid.Column="1" Grid.ColumnSpan="2" Cursor="Hand" TabIndex="2" BorderBrush="#FFFFDCDC"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="27,141,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Text="E-mail" FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644"/>
+                    <GradientStop Color="#FF575050"/>
+                    <GradientStop Color="#FE554E4E" Offset="1"/>
+                    <GradientStop Color="#FF191717" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="34" Margin="43,141,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontFamily="Palatino Linotype" FontSize="20" Grid.Column="1" Grid.ColumnSpan="2" TabIndex="3" BorderBrush="#BFFFFFFF" Background="#B2FFFFFF"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="6,24,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Text="Phone no." FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.Column="4" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644"/>
+                    <GradientStop Color="#FF575050"/>
+                    <GradientStop Color="#FE554E4E" Offset="1"/>
+                    <GradientStop Color="#FF191717" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBox x:Name="ph" HorizontalAlignment="Left" Height="34" Margin="149,24,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontFamily="Palatino Linotype" FontSize="20" Grid.Column="4" TabIndex="4" BorderBrush="#BFFFFFFF" Background="#B2FFFFFF"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="6,63,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Text="Address" FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.Column="4" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644"/>
+                    <GradientStop Color="#FF575050"/>
+                    <GradientStop Color="#FE554E4E" Offset="1"/>
+                    <GradientStop Color="#FF191717" Offset="0.407"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBox x:Name="add" HorizontalAlignment="Left" Height="112" Margin="149,63,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" FontFamily="Palatino Linotype" FontSize="18" Grid.Column="4" Cursor="IBeam" TabIndex="5" BorderBrush="#BFFFFFFF" Background="#B2FFFFFF"/>
+        <DataGrid x:Name="tab" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="395" Margin="27,198,0,0" Grid.Row="1" VerticalAlignment="Top" Width="801" FontSize="20" BorderBrush="Black" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" d:IsLocked="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Item No." Width="100"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Item Name" Width="300"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Quantity" Width="200"/>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Price" Width="200"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="tab_Copy" HorizontalAlignment="Left" Height="35" Margin="29,557,0,0" Grid.Row="1" VerticalAlignment="Top" Width="600.5" FontSize="20" FlowDirection="RightToLeft" BorderBrush="White" Grid.ColumnSpan="4" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False" Foreground="Black" Background="{x:Null}">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Total Cost" Width="200"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <ScrollViewer x:Name="scroll2" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="323" Margin="27,234,0,0" Grid.Row="1" VerticalAlignment="Top" Width="801" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+            <Grid HorizontalAlignment="Left" Height="323" VerticalAlignment="Top" Width="801" Background="White">
+                <TextBox x:Name="i1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Text="1" TabIndex="6" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,36,0,0" TabIndex="10" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,0,0,0" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,36,0,0" TabIndex="11" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,0,0,0" TabIndex="8" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p1" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,0,0,0" TabIndex="9" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,36,0,0" TabIndex="12" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p2" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,36,0,0" TabIndex="13" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,72,0,0" TabIndex="14" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,108,0,0" TabIndex="18" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,72,0,0" TabIndex="15" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,108,0,0" TabIndex="19" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,72,0,0" TabIndex="16" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p3" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,72,0,0" TabIndex="17" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,108,0,0" TabIndex="20" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p4" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,108,0,0" TabIndex="21" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,144,0,0" TabIndex="22" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,180,0,0" TabIndex="25" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,144,0,0" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,180,0,0" TabIndex="26" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,144,0,0" TabIndex="23" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p5" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,144,0,0" TabIndex="24" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,180,0,0" TabIndex="27" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p6" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,180,0,0" TabIndex="28" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,216,0,0" TabIndex="29" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i8" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,252,0,0" TabIndex="33" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,216,0,0" TabIndex="30" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n8" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,252,0,0" TabIndex="34" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,216,0,0" TabIndex="31" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p7" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,216,0,0" TabIndex="32" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q8" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,252,0,0" TabIndex="35" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p8" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,252,0,0" TabIndex="36" Background="#BFFFFFFF"/>
+                <TextBox x:Name="i9" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalContentAlignment="Center" Margin="0,288,0,0" TabIndex="37" Background="#BFFFFFFF"/>
+                <TextBox x:Name="n9" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="20" HorizontalContentAlignment="Center" Margin="100,288,0,0" TabIndex="38" Background="#BFFFFFFF"/>
+                <TextBox x:Name="q9" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="401,288,0,0" TabIndex="39" Background="#BFFFFFFF"/>
+                <TextBox x:Name="p9" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" HorizontalContentAlignment="Center" Margin="601,288,0,0" TabIndex="40" Background="#BFFFFFFF"/>
+            </Grid>
+        </ScrollViewer>
+        <Button x:Name="clr" Content="Clear All" HorizontalAlignment="Left" Height="36" Margin="27,557,0,0" Grid.Row="1" VerticalAlignment="Top" Width="204" FontSize="18" FontStyle="Italic" Grid.ColumnSpan="2" Cursor="Hand" BorderBrush="#B2FF8B00">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#3FFFFFFF"/>
+                    <GradientStop Color="#B2FF8B00" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="save" Content="Save Bill" HorizontalAlignment="Left" Height="60" Margin="229,234,0,0" Grid.Row="1" VerticalAlignment="Top" Width="300" FontSize="18" FontStyle="Italic" Grid.Column="4" Cursor="Hand" TabIndex="41" BorderBrush="#FF2ECA2E" RenderTransformOrigin="0.5,0.5">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2ECA2E" Offset="1"/>
+                    <GradientStop Color="#66FFFFFF"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image x:Name="inc" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="111,39,0,0" Grid.Row="1" VerticalAlignment="Top" Width="29" RenderTransformOrigin="-0.088,0.441" Source="/BillingApp;component/Images/close1.ico" Stretch="UniformToFill" Cursor="Hand" ToolTip="Next Bill Number" Opacity="0.8" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45.821"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Grid.Column="4" Grid.Row="1" Height="49" HorizontalAlignment="Left" Margin="231,243,0,0" Name="Image1" Stretch="None" VerticalAlignment="Top" Width="51" Source="/BillingApp;component/Images/Billing-48.png" />
+        <GroupBox Grid.Column="4" HorizontalAlignment="Left" Height="151" Margin="201,356,0,0" Grid.Row="1" VerticalAlignment="Top" Width="369" BorderBrush="#D963C3FF" Foreground="Black" FontSize="16" FontWeight="Normal" FontStyle="Normal" FontFamily="Segoe Print" Background="#D963C3FF">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="49*" />
+                    <ColumnDefinition Width="360*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock FontSize="18" Grid.ColumnSpan="2" Height="110" HorizontalAlignment="Center" Margin="-6,40,-6,-6" Name="TextBlock1" Text="" TextAlignment="Center" VerticalAlignment="Center" Width="369" Background="{x:Null}"></TextBlock>
+                <TextBlock Height="39" HorizontalAlignment="Center" Name="nm" Text="My trunk!" VerticalAlignment="Center" Width="369" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2" Margin="-6,0,-6,105"><TextBlock.Background><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="White" Offset="0" /><GradientStop Color="Transparent" Offset="1" /></LinearGradientBrush></TextBlock.Background></TextBlock>
+                <Image Height="60" HorizontalAlignment="Left" Margin="6,40,0,0" x:Name="sicon" Source="/BillingApp;component/Images/fixit.png" Stretch="Uniform" VerticalAlignment="Top" Width="60" Cursor="Hand" OpacityMask="{x:Null}" Grid.ColumnSpan="2" />
+                <Image Height="50" HorizontalAlignment="Left" Margin="56,44,0,0" x:Name="reg" Stretch="Uniform" VerticalAlignment="Top" Width="50" Source="/BillingApp;component/Images/note1.ico" Cursor="Hand" Grid.Column="1" />
+                <Image Height="50" HorizontalAlignment="Left" Margin="135,44,0,0" x:Name="abt" Stretch="Fill" VerticalAlignment="Top" Width="50" Source="Images/Information.ico" Cursor="Hand" Grid.Column="1" />
+                <TextBlock FontSize="18" Grid.ColumnSpan="2" Height="44" HorizontalAlignment="Center" Margin="-6,106,-6,-6" Name="TextBlock2" Text="" TextAlignment="Center" VerticalAlignment="Center" Width="369"><TextBlock.Background><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="Transparent" Offset="0" /><GradientStop Color="White" Offset="1" /></LinearGradientBrush></TextBlock.Background></TextBlock>
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="inst" Grid.ColumnSpan="2" Margin="43,136,64,241" Grid.Column="1" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="16" Visibility="Hidden" Background="White" BorderBrush="#FFFFDCDC" />
+        <Label Content="All Rights Reserved" Grid.Column="4" HorizontalAlignment="Left" Height="38" Margin="382,587,0,0" VerticalAlignment="Top" Width="297" FontSize="18" FontFamily="Palatino Linotype" Grid.Row="1" HorizontalContentAlignment="Right">
+            <Label.Background>
+                <LinearGradientBrush SpreadMethod="Reflect">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="tot" Grid.ColumnSpan="2" Content="₹ 0" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="2,556,0,0" Grid.Row="1" VerticalAlignment="Top" Width="199" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="24" FontWeight="Bold" FontFamily="Calibri" BorderBrush="#7F2ECA2E">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FF2ECA2E" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="26,102,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Text="Institution" FontWeight="Bold" FontSize="20" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" Background="{x:Null}">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.644" />
+                    <GradientStop Color="#FF575050" />
+                    <GradientStop Color="#FE554E4E" Offset="1" />
+                    <GradientStop Color="#FF191717" Offset="0.407" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+    </Grid>
+</Window>

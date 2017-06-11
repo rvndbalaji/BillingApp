@@ -1,0 +1,43 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="about" x:Class="abt"
+    Title="About Billing App" Height="485.59" Width="748.297" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Icon="/BillingApp;component/Images/Information.ico" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0.195"/>
+            <GradientStop Color="#FF397DE1" Offset="1"/>
+            <GradientStop Color="#FF397DE1"/>
+            <GradientStop Color="White" Offset="0.831"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="272*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle HorizontalAlignment="Left" Height="496" VerticalAlignment="Top" Width="742" Grid.ColumnSpan="2" Fill="#66F4F4F5" Margin="0,0,0,-39"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="216,-5,0,0" VerticalAlignment="Top" Width="75" Source="bill.ico"/>
+        <Label Content="Eos Billing App" FontFamily="Gabriola" FontSize="45" FontWeight="Normal" HorizontalAlignment="Left" Margin="296,-5,0,394" x:Name="title" Width="227" Grid.ColumnSpan="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4FAAD5" Offset="1" />
+                    <GradientStop Color="#FF000CFF" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="10,112,0,0" TextWrapping="Wrap" Text="Eos® Billing App and its user interface are protected by the trademark of Vifarnet® Corporation and is licensed to any or all of its divisions including but not limited to its owner(s)." VerticalAlignment="Top" Width="722" FontSize="16" Grid.ColumnSpan="2" FontFamily="Palatino Linotype" TextDecorations="{x:Null}"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="320,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontSize="18" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold" Text="Version 1.2" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="5,415,0,0" TextWrapping="Wrap" Text="©2014 Eos® Incorporation" VerticalAlignment="Top" Width="197" FontSize="16" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="148,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontSize="16" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold" Grid.Column="1" Text="©2014 Vifarnet® Corporation"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="5,440,0,-8" TextWrapping="Wrap" Text="All Rights Reserved" VerticalAlignment="Top" Width="151" FontSize="16" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="217,440,0,-8" TextWrapping="Wrap" Text="All Rights Reserved" VerticalAlignment="Top" Width="151" FontSize="16" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="168,302,0,0" TextWrapping="Wrap" Text="This product is licensed to : " VerticalAlignment="Top" Width="412" FontSize="16" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontStyle="Italic" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="67" Margin="10,192,0,0" TextWrapping="Wrap" Text="WARNING : This computer program is protected under copyright law. Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law." VerticalAlignment="Top" Width="722" FontSize="15.5" Grid.ColumnSpan="2" TextDecorations="{x:Null}" FontFamily="Calibri" FontWeight="SemiBold" Foreground="#F2000000"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,328,0,0" TextWrapping="Wrap" Text="Varun Kashyap" VerticalAlignment="Top" Width="110" FontSize="15.5" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="246,328,0,0" TextWrapping="Wrap" Text="Kaushik Murali" VerticalAlignment="Top" Width="114" FontSize="15.5" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="365,328,0,0" TextWrapping="Wrap" Text="&amp;" VerticalAlignment="Top" Width="15" FontSize="15.5" FontFamily="Palatino Linotype" TextDecorations="{x:Null}" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

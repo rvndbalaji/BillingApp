@@ -1,0 +1,62 @@
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbprojResolveAssemblyReference.cache
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbproj.ResolveComReference.cache
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\abt.baml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\ct.baml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\Main.baml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\pass.baml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\regs.baml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\abt.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\ct.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\Main.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\pass.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\regs.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\Application.g.vb
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp_MarkupCompile.cache
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.g.resources
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.Resources.resources
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbproj.GenerateResource.Cache
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.exe.config
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.exe.manifest
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.application
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.exe
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.pdb
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\BillingApp.xml
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\Vifarnet.exe
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\WPFToolkit.Extended.dll
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\Vifarnet.pdb
+D:\NewVB2010\BillingApp\BillingApp\bin\Debug\Vifarnet.xml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.exe.manifest
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.application
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.exe
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.xml
+D:\NewVB2010\BillingApp\BillingApp\obj\x86\Debug\BillingApp.pdb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbprojResolveAssemblyReference.cache
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\Interop.Office.dll
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbproj.ResolveComReference.cache
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\abt.baml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\ct.baml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\Main.baml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\pass.baml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\regs.baml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\abt.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\ct.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\Main.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\pass.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\regs.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\Application.g.vb
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp_MarkupCompile.cache
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.g.resources
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.exe.config
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.exe.manifest
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.application
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.exe
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.pdb
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\BillingApp.xml
+A:\Visual Studio Projects\BillingApp\BillingApp\bin\Debug\WPFToolkit.Extended.dll
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.Resources.resources
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.vbproj.GenerateResource.Cache
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.exe.manifest
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.application
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.exe
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.xml
+A:\Visual Studio Projects\BillingApp\BillingApp\obj\x86\Debug\BillingApp.pdb

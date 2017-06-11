@@ -1,0 +1,78 @@
+﻿<Window x:Name="reg" x:Class="regs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Institution Registration" Icon="Images/note1.ico" WindowStartupLocation="CenterScreen" WindowState="Maximized" Width="1366" Height="740">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="684*"/>
+            <ColumnDefinition Width="337*"/>
+            <ColumnDefinition Width="338*"/>
+        </Grid.ColumnDefinitions>
+        <Image Height="57" HorizontalAlignment="Left" Margin="482,10,0,0" x:Name="logo1" OpacityMask="Black" Source="Images/note1.ico" Stretch="Uniform" VerticalAlignment="Top" Width="60" />
+        <Label Content="Institution Registration" FontFamily="Gabriola" FontSize="45" FontWeight="Normal" HorizontalAlignment="Left" Margin="547,0,0,602" x:Name="title" Width="332" Grid.ColumnSpan="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF003A8D" Offset="0.623" />
+                    <GradientStop Color="#FF00CFD9" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="add" Content="Add Instituition" HorizontalAlignment="Left" Height="37" Margin="10,130,0,0" VerticalAlignment="Top" Width="201" FontSize="18" Cursor="Hand" TabIndex="2" BorderBrush="#FFC39D37" Grid.Column="1" IsDefault="True" Background="#6BC35737"></Button>
+        <ListBox x:Name="inst" Margin="10,172,0,10" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="17" SelectionMode="Extended"/>
+        <TextBox x:Name="nme" HorizontalAlignment="Left" Height="37" Margin="10,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="674" FontSize="20" FontStyle="Italic" TabIndex="1"/>
+        <Button x:Name="remove" Content="Remove Instituition" HorizontalAlignment="Left" Height="37" Margin="10,172,0,0" VerticalAlignment="Top" Width="201" FontSize="18" Cursor="Hand" TabIndex="41" BorderBrush="#FFC39D37" Grid.Column="1" Background="#6BC35737"></Button>
+        <Label Content="Add or Remove Instituitions" FontFamily="Gabriola" FontSize="35" FontWeight="Normal" HorizontalAlignment="Left" Margin="10,76,0,579" x:Name="title_Copy" Width="313">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1" />
+                    <GradientStop Color="DimGray" Offset="0" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="save" Content="Save Register" HorizontalAlignment="Right" Height="54" Margin="0,266,175,0" VerticalAlignment="Top" Width="325" FontSize="18" Cursor="Hand" TabIndex="41" BorderBrush="#FF00AF06" Grid.Column="1" IsDefault="True" Grid.ColumnSpan="2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00AF6F" Offset="1"/>
+                    <GradientStop/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <GroupBox Grid.Column="1" HorizontalAlignment="Left" Height="184" Margin="64,384,0,0" VerticalAlignment="Top" Width="546" BorderBrush="{x:Null}" Foreground="Black" FontSize="16" FontWeight="Normal" FontStyle="Normal" FontFamily="Segoe Print" Grid.ColumnSpan="2">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC37037" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="49*" />
+                    <ColumnDefinition Width="360*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Height="39" HorizontalAlignment="Left" x:Name="nm" Text="Register Stats" VerticalAlignment="Center" Width="559" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2" Margin="-14,1,-11,138">
+                    <TextBlock.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="White" Offset="0" />
+                            <GradientStop Color="Transparent" Offset="1" />
+                        </LinearGradientBrush>
+                    </TextBlock.Background></TextBlock>
+                <TextBlock Height="32" HorizontalAlignment="Center" x:Name="nm_Copy" Text="Regd. Institutions :" VerticalAlignment="Center" Width="151" FontSize="16" Grid.ColumnSpan="2" Margin="0,44,383,102"/>
+                <TextBlock Height="31" HorizontalAlignment="Center" x:Name="no" VerticalAlignment="Center" Width="151" FontSize="18" Margin="95,45,224,102" Grid.Column="1" Text="0" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Palatino Linotype"/>
+                <TextBlock Height="32" HorizontalAlignment="Center" x:Name="nm_Copy1" Text="Total Orders :" VerticalAlignment="Center" Width="151" FontSize="16" Grid.ColumnSpan="2" Margin="0,75,383,71"/>
+                <TextBlock Height="31" HorizontalAlignment="Center" x:Name="bill" VerticalAlignment="Center" Width="151" FontSize="18" Margin="95,76,224,71" Grid.Column="1" Text="0" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Palatino Linotype"/>
+                <TextBlock Height="32" HorizontalAlignment="Center" x:Name="nm_Copy2" Text="Last Updated :" VerticalAlignment="Center" Width="151" FontSize="16" Grid.ColumnSpan="2" Margin="0,107,383,39"/>
+                <TextBlock Height="31" HorizontalAlignment="Center" x:Name="time" VerticalAlignment="Center" Width="250" FontSize="18" Margin="95,107,125,40" Grid.Column="1" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Palatino Linotype"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0.797" />
+            <GradientStop Color="#FF57CAA0" Offset="1" />
+            <GradientStop Color="#FF57CAA0" Offset="0" />
+            <GradientStop Color="White" Offset="0.174" />
+            <GradientStop Color="White" Offset="0.543" />
+        </LinearGradientBrush>
+    </Window.Background>
+</Window>
